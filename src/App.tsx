@@ -1,5 +1,6 @@
-import QRCode from "react-qr-code"
+
 import Form from "./Components/Form";
+import QrList from "./Components/QrList";
 
 
 export default function App() {
@@ -7,14 +8,11 @@ export default function App() {
     <>
       <header className="py-5 text-left bg-gray-100">
         <h1
-          className=" text-5xl font-bold ">Generador de QR</h1>
+          className=" text-5xl font-bold ">Creador de codigos QR</h1>
       </header>
       <Form />
-
-      <QRCode
-      className="max-w-4xl mx-auto m-5"
-      value="https://www.youtube.com/@AxelSoda26"
-        /> 
+      <QrList/>
+     
 
     </>
   )
